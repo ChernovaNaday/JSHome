@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание Функции</title>
+</head>
+<body>
+    <script>
+      const listCars = [
+        car1 = ["audi", "a4", 2007],
+        car2 = ["bmw", "x1", 2009],
+        car3 = ["ford", "focus1", 1998],
+        car4 = ["mazda", "CX9", 2007],
+      ];
+      console.log(listCars) 
+
+   
+
+    function printCarsSpread(car,brand, model, year_of_issue){
+        console.log("car:", car)
+        console.log("brand -",brand);
+        console.log("model -",model);
+        console.log("year of issue -",year_of_issue);
+    }
+    printCarsSpread(...car1)
+    printCarsSpread(...car2)
+    printCarsSpread(...car3)
+    printCarsSpread(...car4)
+    </script>
+</body>
+</html>
