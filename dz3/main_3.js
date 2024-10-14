@@ -1,16 +1,16 @@
-// Создать массив с 5 размичными элементами
+// // Создать массив с 5 размичными элементами
 
 // let animals= ["cat", "dog", "bird", "lion", "snake"];
 //  console.log(animals)   
 
-//  Добавить новое имя в конец
+// //  Добавить новое имя в конец
 // animals.push("newElement")
 
-//  Добавить новое имя в начало
+// //  Добавить новое имя в начало
 
 // animals.unshift("firstElement")
 
-// Удалить первое и последнее имя
+// // Удалить первое и последнее имя
 
 // animals.pop()
 // 'newElement'
@@ -19,9 +19,11 @@
 // animals.shift()
 // 'first_element'
 
-// Сохранить длину получившегося массива в переменную lenOfList и вывести в консоль
+// // Сохранить длину получившегося массива в переменную lenOfList и вывести в консоль
 
-let animals= ["cat", "dog", "bird", "lion", "snake"];
+// let lenOfList ;
+// lenOfList = animals;
+// console.log(lenOfList)
 
-console.log(animals)
-animals.join(" ");
+
+
