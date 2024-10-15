@@ -7,6 +7,38 @@
 </head>
 <body>
     <script>
+//  Написать стрелочные функции для математических операци
+// Вызвать их для чисел, переданных в параметрах функции
+
+const summa = (a,b) => a + b
+result = summa(3,2)
+console.log(result)
+
+const subtraction = (a,b,c) => a - b - c
+result = subtraction(8,2,5)
+console.log(result)
+
+const division = (a,b) => a / b
+result = division(10,5)
+console.log(result)
+
+const multiply = (a,b) => a * b
+result = multiply(2,2)
+console.log(result)
+
+const total = (a,b,c,d) => (a+b)/(c-d)*2
+result = total(10,5,20,5)
+console.log(result)
+
+const squared = n => {
+  const result = n*n
+  return result
+  }
+let num = squared(5)
+console.log(num)
+
+
+// // Определить массив, состоящий из массивов с информацией о машине
       const listCars = [
         car1 = ["audi", "a4", 2007],
         car2 = ["bmw", "x1", 2009],
@@ -15,9 +47,9 @@
       ];
       console.log(listCars) 
 
-   
+//       // Написать функцию, которая выводит информацию обо всех машинах
 
-    function printCarsSpread(car,brand, model, year_of_issue){
+    function printCarsSpread(car,brand,model,year_of_issue){
         console.log("car:", car)
         console.log("brand -",brand);
         console.log("model -",model);
