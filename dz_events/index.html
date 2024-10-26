@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+
+         <style>
+        .header { font-size: 24px; }
+        .description { color: black; }
+        .red { color: red; }    
+        
+        .item { padding: 10px; border: 1px solid black; }
+        .active { background-color: yellow; }
+
+        .list-item { padding: 5px; }
+        .highlight { background-color: yellow; }    
+
+        .title { font-size: 16px; }
+
+        .button { color: black; }
+        .white { color: white; }
+
+
+        </style>
+        
+</head>
+<body>
+
+    <h1 class="header" id="header">Заголовок</h1>
+    <button id="changeTextBtn">Изменить текст</button>
+
+    <p class="description">Это описание.</p>
+<button id="changeColorBtn">Изменить цвет</button>
+
+<input type="text" id="username" placeholder="Введите имя">
+<button id="showValueBtn">Показать значение</button>
+
+<button id="submit">Отправить</button>
+<button id="changeButtonTextBtn">Изменить текст</button>
+
+<div class="item">Элемент 1</div>
+<button id="activateItemBtn">Активировать элемент</button>
+
+<p id="message">Сообщение</p>
+<button id="setMessageBtn">Установить сообщение</button>
+   
+<ul>
+    <li class="list-item">Элемент 1</li>
+    <li class="list-item">Элемент 2</li>
+    <li class="list-item">Элемент 3</li>
+    </ul>
+    <button id="highlightListBtn">Выделить элементы списка</button>
+    
+    <img id="image" src="img/old_images.jpeg" alt="Изображение">
+<button id="changeImageBtn">Изменить изображение</button>
+
+<p class="counter" id="counter">0</p>
+<button id="incrementBtn">Увеличить счетчик</button>
+
+<h2 class="title" id="title">Заголовок</h2>
+<button id="increaseFontSizeBtn">Увеличить размер шрифта</button>
+
+<button class="button">Кнопка 1</button>
+<button class="button">Кнопка 2</button>
+<button id="changeButtonColorBtn">Изменить цвет текста кнопок</button>
+
+</body>
+
+<script>
+    document.getElementById('changeTextBtn').addEventListener('click', function() {
+    document.getElementById('header').textContent = 'Добро пожаловать!';
+    });
+
+    document.getElementById('changeColorBtn').addEventListener('click', function() {
+document.querySelector('.description').classList.add('red');
+});
+
+
+document.getElementById('showValueBtn').addEventListener('click', function() {
+const value = document.getElementById('username').value;
+console.log(value);
+});
+
+
+document.getElementById('changeButtonTextBtn').addEventListener('click', function()
+{
+document.getElementById('submit').textContent = 'Отправлено';
+});
+
+document.getElementById('activateItemBtn').addEventListener('click', function() {
+document.querySelector('.item').classList.add('active');
+});
+
+document.getElementById('setMessageBtn').addEventListener('click', function() {
+document.getElementById('message').textContent = 'Успешно выполнено!';
+});
+
+document.getElementById('highlightListBtn').addEventListener('click', function() {
+document.querySelectorAll('.list-item').forEach(item => {
+item.classList.add('highlight');
+});
+});
+
+document.getElementById('changeImageBtn').addEventListener('click', function() {
+document.getElementById('image').src = 'new_image.jpeg';
+});
+
+
+document.getElementById('incrementBtn').addEventListener('click', function() {
+const counterElement = document.getElementById('counter');
+let count = parseInt(counterElement.textContent);
+count++;
+counterElement.textContent = count;
+});
+
+
+
+document.getElementById('increaseFontSizeBtn').addEventListener('click', function()
+{
+document.getElementById('title').style.fontSize = '24px';
+});
+
+document.getElementById('changeButtonColorBtn').addEventListener('click',
+function() {
+document.querySelectorAll('.button').forEach(button => {
+button.classList.add('white');
+});
+});
+
+    </script> 
+</html>
