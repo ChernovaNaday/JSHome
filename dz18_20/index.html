@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="../dz18_20/main_18.js"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -155,18 +155,14 @@ const copy = {...original, height: 65}
 // - Измените значение свойства name на Pete.
 // - Удалите свойство name из объекта
 
-const user = {};
+let user = {
+  name: "John",
+  surname: "Smit",
+};
 
-function User(name) {
-  this.name = name;
-  // this.surname = surname;
-}
+user.name = "Pete"
+delete user["name"];
 
-let name = new User("John");
-
-// user.name = "Pete"
-// delete user["name"];
-// let surname = new User("Smith");
 console.log(user)
 
 
