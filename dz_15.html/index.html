@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <form action="" name="myForm" id="myForm" onsubmit="return false">
+    <p>
+            <label for="firstNumber">Введите первое число</label>
+            <input type="text" name="tefirstNumberField" id="firstNumber">
+    </p>
+    <p>
+            <label for="secondNumber">Введите второе число</label>
+            <input type="text" name="secondNumberField" id="secondNumber">
+    </p>
+    <p>
+            <button type="button" onclick="numberSumma()" id="btnSumma">Сумма чисел</button>
+    </p>   
+    </form>
+</body>
+<script>
+
+    function numberSumma(){
+        const input1 =parseFloat(document.getElementById('firstNumber').value);
+        const input2 = parseFloat(document.getElementById('secondNumber').value);
+        if(isNaN(input1) || isNaN(input2)) {
+            alert("Введите числа");
+            return;
+        }
+
+        const sum = input1 + input2;
+        alert("Сумма:" + sum)
+      
+
+
+    }
+    
+</script>
+
+
+
+</html>
