@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm" name="myForm">
+        <p>
+            <label for="password">Пароль</label>
+            <input type="text" name="password" id="password" maxlength="20" minlength="10" required>
+        </p>
+        <p>
+            <label for="repeat">Повторите пароль</label>
+            <input type="text" name="repeat" id="repeat" maxlength="20" minlength="10" required>
+        </p>
+            <button type="submit" id="submit" name="submit">Отправить</button>
+    </form>
+    
+</body>
+
+<script>
+    const passwordField = document.querySelector('#password');
+   const repeatField = document.querySelector('#repeat')
+
+   const registerForm = document.myForm;
+   const submit = registerForm.submit;
+   submit.addEventListener('report', validity);
+
+   function validity(){
+    if(passwordField !== repeatField){
+        
+    }
+    else(!registerForm.repeat.reportValidity()){
+        registerForm.repeat.setCustomValidity("Ошибка")
+    }
+   };
+
+</script>
+</html>

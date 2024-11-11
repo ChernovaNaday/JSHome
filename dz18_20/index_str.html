@@ -188,21 +188,21 @@ console.log(averageWordLength("Учусь писать на JavaScript"));
 // которым находится этот символ в строке. Также вывести, сколько всего раз
 // встречается этот символ в строке
 
-// const findCharIndices = (str, char) => {
-//     const indices = ["Привет ка твои дела?"];
-//     let count = 0;
+const findCharIndices = (str, char) => {
+    const indices = ["Привет ка твои дела?"];
+    let count = 0;
 
-//     // Проходим по каждому символу строки
-//     for (let i = 0; i < str.length; i++) {
-//         if (str[i] === char) {
-//             indices.push(i);
-//             count++;
-//         }
-//     }
+    // Проходим по каждому символу строки
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === char) {
+            indices.push(i);
+            count++;
+        }
+    }
 
-//     return { indices, count };
-// };
+    return { indices, count };
+};
 
-// console.log(`Индексы: ${result.indices}`);
+console.log(`Индексы: ${result.indices}`);
 </script>
 </html>
